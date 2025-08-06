@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     title: "Hasbi Fauzun – Full Stack Web Developer Portfolio",
     description:
       "Explore Hasbi's latest web projects and experience in building modern websites using React, Next.js, and more.",
-    url: "https://your-portfolio-url.com",
-    siteName: "Hasbi's Portfolio",
+    url: "https://porto-hasbi-firdaus-fauzun.vercel.app",
+    siteName: "Hasbi Firdaus",
     images: [
       {
-        url: "https://your-portfolio-url.com/og-image.jpg", // <- Gambar yang muncul di saat dibagikan
+        url: "/og-image.png", // <- Gambar yang muncul di saat dibagikan
         width: 1200,
         height: 630,
         alt: "Hasbi Portfolio Preview",
