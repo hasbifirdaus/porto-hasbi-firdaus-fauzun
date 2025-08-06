@@ -124,9 +124,10 @@ export default function Portfolio() {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
         >
-          Welcome to my web development portfolio. Here you'll find a selection
-          of projects that reflect my journey and skills in building responsive
-          and dynamic websites using HTML, CSS, JavaScript, React, and Next.js.
+          Welcome to my web development portfolio. Here you&apos;ll find a
+          selection of projects that reflect my journey and skills in building
+          responsive and dynamic websites using HTML, CSS, JavaScript, React,
+          and Next.js.
         </motion.p>
       </div>
 

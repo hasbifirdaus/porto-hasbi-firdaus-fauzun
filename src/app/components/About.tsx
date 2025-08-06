@@ -59,8 +59,8 @@ const About = ({ isDarkMode }: AboutProps) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-ovo">
-            I'm a beginner web developer exploring full stack development with
-            HTML, CSS, JavaScript, React, and Next.js. I enjoy building
+            I&apos;m a beginner web developer exploring full stack development
+            with HTML, CSS, JavaScript, React, and Next.js. I enjoy building
             responsive websites and learning through real projects to kickstart
             my professional career.
           </p>

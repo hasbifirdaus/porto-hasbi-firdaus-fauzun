@@ -23,7 +23,7 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.3 }}
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo"
       >
-        Hi! I'm Hasbi Firdaus Fauzun
+        Hi! I&apos;m Hasbi Firdaus Fauzun
         <Image
           src={assets.hand_icon}
           alt="Hasbi Firdaus Fauzun"
@@ -44,7 +44,7 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-ovo"
       >
-        I'm a passionate full stack web developer from Indonesia, currently
+        I&apos;m a passionate full stack web developer from Indonesia, currently
         building projects with HTML, CSS, JavaScript, React, and Next.js, as I
         prepare for a professional career in the tech industry.
       </motion.p>

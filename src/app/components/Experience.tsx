@@ -62,9 +62,9 @@ const Experience = () => {
         transition={{ delay: 0.7, duration: 0.5 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-[var(--font-ovo)]"
       >
-        Every journey begins with a step. From communication to code, I've grown
-        through writing gigs, bootcamp projects, and team work. This timeline
-        maps my path into tech
+        Every journey begins with a step. From communication to code, I&apos;ve
+        grown through writing gigs, bootcamp projects, and team work. This
+        timeline maps my path into tech
       </motion.p>
 
       <ul className="relative space-y-8 before:absolute before:top-0 before:left-1/2 before:h-full before:w-0.5 before:-translate-x-1/2 before:rounded-full before:bg-gray-200 dark:before:bg-gray-700">

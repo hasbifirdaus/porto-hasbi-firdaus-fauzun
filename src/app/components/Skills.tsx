@@ -72,10 +72,10 @@ export default function Skills() {
           transition={{ delay: 0.7, duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mt-4 sm:mt-5 mb-8 sm:mb-12 font-[var(--font-ovo)] text-sm sm:text-base"
         >
-          As an aspiring web developer, I've been learning essential
+          As an aspiring web developer, I&apos;ve been learning essential
           technologies across the full development stack. From designing user
           interfaces to understanding backend processes, here are the core
-          skills I'm currently building.
+          skills I&apos;m currently building.
         </motion.p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -87,8 +87,8 @@ const Testimonials = ({ isDarkMode }: Props) => {
           transition={{ delay: 0.7, duration: 0.5 }}
           className="text-center max-w-2xl mx-auto mt-5 mb-12 font-[var(--font-ovo)]"
         >
-          Here are some kind words from people I've worked with. Their feedback
-          shows not just what we built together, but also the learning,
+          Here are some kind words from people I&apos;ve worked with. Their
+          feedback shows not just what we built together, but also the learning,
           teamwork, and dedication behind every project.
         </motion.p>
       </div>
@@ -142,7 +142,7 @@ const Testimonials = ({ isDarkMode }: Props) => {
                       "0 0 4px rgba(255,255,255,0.3), 0 0 8px rgba(255,255,255,0.2)",
                   }}
                 >
-                  "{item.testimonial}"
+                  &quot;{item.testimonial}&quot;
                 </p>
               </div>
             </div>
