@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Hasbi Firdaus",
     images: [
       {
-        url: "/og-image.png", // <- Gambar yang muncul di saat dibagikan
+        url: "/og-image.jpg", // <- Gambar yang muncul di saat dibagikan
         width: 1200,
         height: 630,
         alt: "Hasbi Portfolio Preview",
