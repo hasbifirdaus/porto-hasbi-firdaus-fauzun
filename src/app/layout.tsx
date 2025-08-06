@@ -60,7 +60,7 @@ export const metadata: Metadata = {
       "Welcome to Hasbi's portfolio. See the latest full stack web projects built with modern technologies.",
     images: ["https://your-portfolio-url.com/og-image.jpg"],
   },
-  metadataBase: new URL("https://your-portfolio-url.com"),
+  metadataBase: new URL("https://porto-hasbi-firdaus-fauzun.vercel.app"),
 };
 
 export default function RootLayout({
