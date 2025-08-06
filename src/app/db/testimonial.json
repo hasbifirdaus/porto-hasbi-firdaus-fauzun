@@ -1,0 +1,28 @@
+{
+  "testimonials": [
+    {
+      "name": "Luna",
+      "role": "Client – Portfolio Website Project",
+      "img": "people1.png",
+      "testimonial": "Hasbi delivered a sleek and responsive portfolio website that exceeded my expectations. The layout is intuitive, and the performance is excellent on both mobile and desktop."
+    },
+    {
+      "name": "Alex",
+      "role": "Client – SEO Copywriting Services",
+      "img": "people-3.jpg",
+      "testimonial": "Hasbi's articles helped boost our website traffic significantly. He understands SEO, writes clearly, and always meets deadlines. A reliable and talented content partner."
+    },
+    {
+      "name": "Shira",
+      "role": "Client – Blog & Landing Page Design",
+      "img": "people-2.jpg",
+      "testimonial": "Hasbi redesigned our blog and landing pages with a modern and clean aesthetic. Conversions improved, and user engagement increased. Highly recommended!"
+    },
+    {
+      "name": "Winston",
+      "role": "Client – Event Microsite Development",
+      "img": "people-4.jpg",
+      "testimonial": "The microsite Hasbi built for our seminar looked professional and was easy to manage. He provided ongoing support and clear documentation throughout the project."
+    }
+  ]
+}
