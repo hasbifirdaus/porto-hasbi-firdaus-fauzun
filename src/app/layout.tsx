@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "Hasbi Fauzun - Full Stack Web Developer",
     description:
       "Welcome to Hasbi's portfolio. See the latest full stack web projects built with modern technologies.",
-    images: ["https://your-portfolio-url.com/og-image.jpg"],
+    images: ["/og-image.jpg"],
   },
   metadataBase: new URL("https://porto-hasbi-firdaus-fauzun.vercel.app"),
 };
