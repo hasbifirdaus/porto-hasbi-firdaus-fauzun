@@ -11,7 +11,7 @@ const projects = [
     title: "Omnifood Company Profile Website",
     technologies: ["React", "Next.js", "Tailwind CSS", "Backendless"],
     image: "/portfolio/omnifood.jpg",
-    link: "https://omnifood-app-git-main-hasbis-projects-908d1198.vercel.app/",
+    link: "https://omnifood-amber-iota.vercel.app/",
     situation:
       "A full-stack project to replicate and enhance a real-world company profile site using modern tools.",
     task: "Build a responsive multi-page website with dynamic content, blog creation, and user authentication.",
