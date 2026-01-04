@@ -16,24 +16,25 @@ const skills = [
       "React",
       "Next.js",
       "Tailwind CSS",
+      "Bootstrap",
     ],
   },
   {
     category: "Back-End Skills",
     icon: ServerCog,
     items: [
+      "JavaScript",
       "Node.js",
       "Express.js",
-      "Django",
-      "Ruby on Rails",
-      "MongoDB",
+      "EJS",
       "PostgreSQL",
+      "Supabase",
     ],
   },
   {
     category: "DevOps & Tools",
     icon: Wrench,
-    items: ["Git", "GitHub", "Docker", "Jenkins", "AWS", "CI/CD"],
+    items: ["Git", "GitHub"],
   },
 ];
 

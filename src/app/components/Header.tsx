@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Header = () => {
   return (
-    <div className="w-11/12 max-w-3xl text-center  mx-auto h-screen flex flex-col items-center justify-center gap-5">
+    <div className="w-11/12 max-w-3xl text-center mx-auto min-h-screen pt-24 flex flex-col items-center justify-center gap-5">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -24,11 +24,7 @@ const Header = () => {
         className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo"
       >
         Hi! I&apos;m Hasbi Firdaus Fauzun
-        <Image
-          src={assets.hand_icon}
-          alt="Hasbi Firdaus Fauzun"
-          className=" w-6"
-        />
+        <Image src={assets.hand_icon} alt="hand shake" className=" w-6" />
       </motion.h3>
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
