@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Experience from "./components/Experience";
-import Testimonials from "./components/Testimonials";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 
@@ -41,7 +40,6 @@ export default function Home() {
       <Skills />
       <Portfolio />
       <Experience />
-      <Testimonials isDarkMode={isDarkMode} />
       <Contact />
       <Footer isDarkMode={isDarkMode} />
     </>

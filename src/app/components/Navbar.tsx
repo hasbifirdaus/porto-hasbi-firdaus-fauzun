@@ -86,11 +86,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }: NavbarProps) => {
             </a>
           </li>
           <li>
-            <a className="font-[var(--font-ovo)]" href="#testimonials">
-              Testimonials
-            </a>
-          </li>
-          <li>
             <a className="font-[var(--font-ovo)]" href="#contact">
               Contact
             </a>
