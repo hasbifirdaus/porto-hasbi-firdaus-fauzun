@@ -8,6 +8,30 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "EventUp – Event Management Platform",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Express.js",
+      "Prisma",
+      "PostgreSQL",
+      "Midtrans",
+      "Recharts",
+    ],
+    image: "/portfolio/EventUp.jpg",
+    link: "https://event-up-six.vercel.app/",
+    situation:
+      "An MVP web platform that connects event organizers and attendees in a single application.",
+    task: "Build an event platform for browsing events, purchasing tickets, managing referrals, and organizer event management.",
+    action:
+      "Implemented full-stack features including event discovery, ticketing flow, referrals, and analytics dashboard.",
+    result:
+      "Delivered a fully functional MVP showcasing full-stack development and real-world event workflows.",
+  },
+  {
     title: "Omnifood Company Profile Website",
     technologies: ["React", "Next.js", "Tailwind CSS", "Backendless"],
     image: "/portfolio/omnifood.jpg",
@@ -16,7 +40,7 @@ const projects = [
       "A full-stack project to replicate and enhance a real-world company profile site using modern tools.",
     task: "Build a responsive multi-page website with dynamic content, blog creation, and user authentication.",
     action:
-      "Developed with Next.js, styled using Tailwind CSS, used Backendless for blog storage, and integrated dynamic team data from API.",
+      "Implemented with Next.js, Tailwind CSS, Backendless, and API integration.",
     result:
       "Successfully launched a functional and responsive company profile app with blog features and login system.",
   },
@@ -28,10 +52,9 @@ const projects = [
     situation:
       "A creative portfolio website for a fictional real estate brand to showcase luxury homes.",
     task: "Design and develop a highly visual, grid-based layout demonstrating CSS Grid mastery.",
-    action:
-      "Used semantic HTML5 and advanced CSS Grid properties to structure complex layouts with responsive behavior.",
+    action: "Built layouts using semantic HTML5 and advanced CSS Grid.",
     result:
-      "Successfully crafted a visually stunning and responsive real estate portfolio site that improved my layout structuring skills.",
+      "Delivered a responsive and visually polished real estate portfolio site.",
   },
   {
     title: "Bankist - Bank App Simulation",
@@ -55,9 +78,9 @@ const projects = [
       "A practice project to learn and apply SCSS during early stages of web development learning.",
     task: "Build a responsive hotel booking interface layout using semantic HTML and modern SCSS features.",
     action:
-      "Structured the layout with HTML and styled it using SCSS variables, nesting, and mixins to create reusable and organized styles.",
+      "Structured the layout with HTML and styled it using SCSS variables, nesting, and mixins for reusable styles.",
     result:
-      "Completed a clean and responsive UI layout, improving my confidence in using SCSS and front-end layouting techniques.",
+      "Delivered a clean and responsive UI layout, strengthening my SCSS and layouting skills.",
   },
 ];
 
@@ -151,51 +174,65 @@ export default function Portfolio() {
         </div>
 
         {/* Cards */}
+        {/* Cards Container */}
         <div
-          className={` max-w-[86rem] flex items-center justify-center mx-auto gap-6 transition-all duration-500 ${
+          className={`max-w-[86rem] mx-auto grid gap-6 transition-all duration-500 ${
             itemsToShow === 1
               ? "grid-cols-1"
               : itemsToShow === 2
-              ? "md:grid-cols-2"
-              : "md:grid-cols-3"
+              ? "grid-cols-2"
+              : "grid-cols-3"
           }`}
         >
-          {visibleProjects.map((project, i) => (
+          {visibleProjects.map((project) => (
             <Card
-              key={i}
-              className="overflow-hidden rounded-2xl shadow-md hover:shadow-lg"
+              key={project.title}
+              className="overflow-hidden rounded-2xl shadow-md hover:shadow-lg flex flex-col h-full w-full"
             >
               <Link
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={650}
-                  height={650}
-                  quality={100}
-                  className="w-full h-48 object-contain"
-                />
+                <div className="w-full h-48 relative bg-gray-100">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                  />
+                </div>
               </Link>
-              <CardContent className="p-6 space-y-2">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-sm text-muted-foreground">
-                  <span className="font-semibold">Technologies:</span>{" "}
-                  {project.technologies.join(", ")}
-                </p>
-                <div className="text-sm space-y-1 hidden lg:block">
-                  <p>
+
+              <CardContent className="p-6 flex flex-col flex-grow">
+                {/* Judul dengan tinggi tetap (2 baris) */}
+                <h3 className="text-xl font-semibold mb-2 min-h-[3.5rem] line-clamp-2">
+                  {project.title}
+                </h3>
+
+                {/* Technologies dengan tinggi tetap (3 baris/lebih tergantung konten) */}
+                <div className="text-sm text-muted-foreground mb-4 min-h-[4rem]">
+                  <span className="font-semibold text-black dark:text-white">
+                    Technologies:
+                  </span>{" "}
+                  <p className="line-clamp-3">
+                    {project.technologies.join(", ")}
+                  </p>
+                </div>
+
+                {/* Bagian STAR - Gunakan flex-grow agar nempel ke bawah */}
+                <div className="text-sm space-y-2 hidden lg:block mt-auto border-t pt-4">
+                  <p className="line-clamp-2">
                     <strong>Situation:</strong> {project.situation}
                   </p>
-                  <p>
+                  <p className="line-clamp-2">
                     <strong>Task:</strong> {project.task}
                   </p>
-                  <p>
+                  <p className="line-clamp-2">
                     <strong>Action:</strong> {project.action}
                   </p>
-                  <p>
+                  <p className="line-clamp-2">
                     <strong>Result:</strong> {project.result}
                   </p>
                 </div>
