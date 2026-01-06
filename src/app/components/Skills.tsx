@@ -22,19 +22,20 @@ const skills = [
   {
     category: "Back-End Skills",
     icon: ServerCog,
-    items: [
-      "JavaScript",
-      "Node.js",
-      "Express.js",
-      "EJS",
-      "PostgreSQL",
-      "Supabase",
-    ],
+    items: ["JavaScript", "Node.js", "Express.js", "EJS", "PostgreSQL"],
   },
   {
     category: "DevOps & Tools",
     icon: Wrench,
-    items: ["Git", "GitHub"],
+    items: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "DBeaver",
+      "pgAdmin",
+      "Postman",
+      "Supabase",
+    ],
   },
 ];
 
